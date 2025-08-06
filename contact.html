@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volunteer - Shiksha Education Foundation</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="Logo" width="40" class="rounded-circle me-2">
+        <strong>Shiksha Foundation</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Volunteer</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Volunteer Section -->
+  <section class="py-5" style="background-color: #f9f9f9;">
+    <div class="container">
+      <h2 class="text-center mb-4">Become a Volunteer</h2>
+      <p class="text-center mb-4 text-muted">Fill out the form below to join us in spreading education to every child.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow p-4">
+            <form onsubmit="return showPopup();">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Why do you want to volunteer?</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Shiksha Education Foundation | All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate - Shiksha Education Foundation</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-2" />
+        <strong>Shiksha Education Foundation</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Volunteer</a></li>
+          <li class="nav-item"><a class="nav-link active" href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Donation Hero Section -->
+  <header class="hero-section text-white text-center py-5" style="background-image: url('images/child.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Support a Child's Future</h1>
+      <p class="lead">Every small donation makes a big impact. Help us spread the light of education.</p>
+    </div>
+  </header>
+
+  <!-- Donation Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Make a Difference Today</h2>
+      <p class="text-muted mb-4">Your contribution directly helps underprivileged children gain access to quality education, learning resources, nutritious meals, and more. Join our mission to create a better future.</p>
+
+      <div class="d-flex justify-content-center">
+        <div class="card p-4 shadow-sm" style="max-width: 400px;">
+          <img src="images/donate_qr.png" alt="Donate QR" class="img-fluid rounded mb-3">
+          <p><strong>UPI ID:</strong> <code>shiksha@upi</code></p>
+          <p class="text-muted">You can donate using any UPI app: PhonePe, Google Pay, Paytm, etc.</p>
+          <p class="text-muted">
+            <em>Note: This QR code is for demo purpose only. No actual transaction is required.</em>
+          </p>
+          <button class="btn btn-success w-100" onclick="showThankYou()">I’ve Donated</button>
+        </div>
+      </div>
+
+      <div id="thankYouMsg" class="alert alert-success mt-4 d-none" role="alert">
+        Thank you for supporting our cause! Your donation will help educate a child in need.
+      </div>
+
+      <!-- Optional Additional Info -->
+      <div class="mt-5 text-start">
+        <h4 class="mb-3">Why Donate to Us?</h4>
+        <ul class="list-unstyled">
+          <li>100% funds go towards child education programs.</li>
+          <li>Transparent usage and regular impact reports.</li>
+          <li>Tax benefits available under section 80G (optional if real).</li>
+        </ul>
+
+        <p class="mt-4">Want to partner with us or donate through other means (Bank Transfer, Cheque, etc.)? <a href="contact.html">Contact Us</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Shiksha Education Foundation. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script>
+    function showThankYou() {
+      document.getElementById("thankYouMsg").classList.remove("d-none");
+    }
+  </script>
+</body>
+</html>
