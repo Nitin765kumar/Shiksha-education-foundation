@@ -5,7 +5,7 @@ This is a frontend project built for an NGO as part of a web development interns
 ---
 
 ## Live Preview
-[Visit Website](#) (Add your GitHub Pages or hosted link if available)
+[https://github.com/Nitin765kumar/Shiksha-education-foundation](#) (Add your GitHub Pages or hosted link if available)
 
 ---
 
@@ -58,4 +58,5 @@ shiksha-education-foundation/
 │   ├── about.jpg
 |   |-- child.jpg
 │   └── donate_qr.png
+
 └── README.md
